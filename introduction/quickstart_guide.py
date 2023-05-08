@@ -16,7 +16,7 @@ load_dotenv(find_dotenv())
 # --------------------------------------------------------------
 
 llm = OpenAI(model_name="text-davinci-003")
-prompt = "Write a poem about python and ai"
+prompt = "What are top plugins for ChatGPT"
 print(llm(prompt))
 
 
@@ -62,7 +62,7 @@ agent = initialize_agent(
 
 # Now let's test it out!
 result = agent.run(
-    "In what year was python released and who is the original creator? Multiply the year by 3"
+    "What year was Design Thinking introduced"
 )
 print(result)
 

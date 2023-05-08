@@ -10,6 +10,7 @@ from langchain.prompts.chat import (
     SystemMessagePromptTemplate,
     HumanMessagePromptTemplate,
 )
+import streamlit as st
 import textwrap
 
 load_dotenv(find_dotenv())
@@ -68,9 +69,9 @@ def get_response_from_query(db, query, k=4):
 
 
 # Example usage:
-video_url = "https://www.youtube.com/watch?v=L_Guz73e6fw"
+video_url = "https://www.youtube.com/watch?v=zpr0hQ4o16M&t=10s"
 db = create_db_from_youtube_video_url(video_url)
 
-query = "What are they saying about Microsoft?"
+query = "If there any websites or brands mentioned provide a list of all of them?"
 response, docs = get_response_from_query(db, query)
 print(textwrap.fill(response, width=50))
