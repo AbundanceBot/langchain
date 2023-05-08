@@ -12,7 +12,7 @@ from langchain.prompts.chat import (
 )
 import streamlit as st
 import textwrap
-
+q
 load_dotenv(find_dotenv())
 embeddings = OpenAIEmbeddings()
 
